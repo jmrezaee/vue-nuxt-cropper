@@ -7,7 +7,7 @@
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/JMRezaee/vue-nuxt-cropper"
+    "url": "git+https://github.com/JMRezaee/vue-nuxt-cropper.git"
   },
   "keywords": [
     "vue",
@@ -60,5 +60,9 @@
     "vue-hot-reload-api": "^2.3.2",
     "vue-slim-loading": "^1.0.2",
     "vue-template-compiler": "^2.6.10"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/JMRezaee/vue-nuxt-cropper/issues"
+  },
+  "homepage": "https://github.com/JMRezaee/vue-nuxt-cropper#readme"
 }
