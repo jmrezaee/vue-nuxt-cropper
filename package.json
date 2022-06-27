@@ -1,0 +1,64 @@
+{
+  "name": "vue-nuxt-cropper",
+  "version": "1.0.0",
+  "description": "💇 A simple image crop upload component for Vue, Nuxt",
+  "author": "JMRezaee",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JMRezaee/vue-nuxt-cropper"
+  },
+  "keywords": [
+    "vue",
+    "mobile-web",
+    "image-cropper",
+    "image-clip"
+  ],
+  "main": "dist/vue-nuxt-cropper.min.js",
+  "module": "dist/vue-nuxt-cropper.esm.min.js",
+  "scripts": {
+    "dev": "parcel demo/index.html -p 8080 --out-dir demo/dev",
+    "build:demo": "rm -rf demo/dist/ && parcel build demo/index.html --out-dir demo/dist --public-url ./",
+    "build": "dio",
+    "lint": "eslint --fix --ext .js,.vue .",
+    "release": "sh scripts/release.sh"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@momoko/vue"
+    ]
+  },
+  "eslintIgnore": [
+    "dist"
+  ],
+  "babel": {
+    "presets": [
+      "@momoko/vue"
+    ]
+  },
+  "dioConfig": {
+    "external": [
+      "cropperjs"
+    ]
+  },
+  "browserslist": [
+    "iOS >= 9",
+    "Android >= 4.4"
+  ],
+  "dependencies": {
+    "cropperjs": "^1.5.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.0",
+    "@momoko/babel-preset-vue": "^0.2.0",
+    "@momoko/eslint-config-vue": "^0.2.2",
+    "dio-bundler": "^0.5.2",
+    "parcel-bundler": "^1.12.3",
+    "standard-version": "^4.4.0",
+    "vue": "^2.6.10",
+    "vue-hot-reload-api": "^2.3.2",
+    "vue-slim-loading": "^1.0.2",
+    "vue-template-compiler": "^2.6.10"
+  }
+}
